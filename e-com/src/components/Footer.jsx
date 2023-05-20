@@ -58,7 +58,13 @@ const Right = styled.div`
 `
 const ContactItem = styled.div`
     display: flex;
+    margin-bottom: 20px;
+    align-items: center;
     
+`
+const Payment = styled.img`
+    width: 50%;
+
 `
 export default function Footer() {
   return (
@@ -104,9 +110,16 @@ export default function Footer() {
         </Center>
         <Right>
             <Title>Contact</Title>
-            <ContactItem><Room/> 798, Stark Industries, Long Island</ContactItem>
-            <ContactItem><Phone/> +91 8109551792</ContactItem>
-            <ContactItem><MailOutline/> slayturn.help@starkindustries.com</ContactItem>
+            <ContactItem>
+                <Room style={{marginRight:"10px"}}/> 798, Stark Industries, Long Island
+            </ContactItem>
+            <ContactItem>
+                <Phone style={{marginRight:"10px"}}/> +91 8109551792
+            </ContactItem>
+            <ContactItem>
+                <MailOutline style={{marginRight:"10px"}}/> slayturn.help@starkindustries.com
+            </ContactItem>
+            <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </Right>
     </Container>
   )
