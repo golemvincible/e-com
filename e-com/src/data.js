@@ -8,7 +8,7 @@ export const sliderItems = [
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/15895528/pexels-photo-15895528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      img: "https://images.pexels.com/photos/2229490/pexels-photo-2229490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "SUMMER COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
