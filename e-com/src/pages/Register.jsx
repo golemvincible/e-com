@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     width: 100vw;
@@ -20,7 +21,9 @@ const Wrapper = styled.div`
     width: 50%;
     padding: 20px;
     background-color: white;
-
+    ${mobile({
+        width: "80%"
+    })}
 `
 const Title = styled.h1`
     font-size: 24px;
@@ -52,6 +55,10 @@ const Button = styled.button`
     background-color: teal;
     color: white;
     cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover{
+        background-color: rgb(10, 87, 87);
+    }
 `
 export default function Register() {
   return (

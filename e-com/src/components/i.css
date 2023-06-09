@@ -73,12 +73,20 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-bottom: 10px;
+    align-items: center;
     width: 100%;
     padding: 10px;
     background-color: rgb(26, 1, 1);
     color: white;
+    margin: 0px 20px;
+    @media only screen and (max-width:380px){
+        display:none;
+    }
     font-weight: 600;
 
     flex-direction: column;

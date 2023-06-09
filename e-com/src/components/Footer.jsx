@@ -1,9 +1,13 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     display: flex;
+    ${mobile({
+        flexDirection: "column"
+    })}
 `
 const Left = styled.div`
     flex: 1;
@@ -35,6 +39,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({
+        display: "none"
+    })}
 `
 const Title = styled.h3`
     margin-bottom: 30px;
@@ -54,7 +61,9 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px; 
-       
+    ${mobile({
+        backgroundColor: "#eee"
+    })}
 `
 const ContactItem = styled.div`
     display: flex;
@@ -72,10 +81,10 @@ export default function Footer() {
         <Left>
             <Logo>Slayturn</Logo>
             <Desc>
-                A Stark Industries Product.
-                There are many variations of passages of Lorem Ipsum available, but
-                the majority have suffered alteration in some form, by injected
-                humour, or randomised words which don’t look even slightly believable.
+                A Stark Industries Product.<br/>
+                The Stark industries brings you the finest of all products, A legacy of Tony Stark
+                and team. Products are available on select stores that are franchises of Stark Industries
+                in select contries.
             </Desc>
             <SocialContainer>
                 <SocialIcon color="3B5999">

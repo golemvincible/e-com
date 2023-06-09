@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Navbar from '../components/Navbar'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     width: 100vw;
@@ -21,8 +23,10 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     display: flex;
-
     flex-direction: column;
+    ${mobile({
+        width: "80%"
+    })}
 `
 const Title = styled.h1`
     font-size: 24px;
@@ -68,8 +72,10 @@ const Link = styled.a`
 `
 export default function Login() {
   return (
+
     <Container>
         <Wrapper>
+            
             <Title>SIGN IN</Title>
             <Form>
                 <Input placeholder="Username"/>
